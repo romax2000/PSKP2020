@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <body>
+      <p id="text">XMLHttpRequest -</p>
+      <script>
+        let xhr = new XMLHttpRequest();
+        let url = "http://localhost:3000/name";
+
+        xhr.open("GET", url, true); //true - ассинх. выполнение запроса, false - синх. выполнение запроса
+        xhr.send(null); //тело сообщения
+        xhr.onreadystatechange = function () { 
+          // при каждом изменении свойства
+          if (xhr.readyState == 4) {
+            // Операция полностью завершена.
+            document.getElementById("text").textContent += readBody(xhr);
+          }
+        };
+
+        function readBody(xhr) {
+          let data;
+          if (!xhr.responseType || xhr.responsType === "text/plain") {
+            data = xhr.responseText; // возвращает текст ответа от сервера на отправленный запрос
+          } else if (xhr.responseType === "document") {
+            data = xhr.responseXML; //
+          } else {
+            data = xhr.response; // возвращает содержимое тела ответа в виде ArrayBuffer, Blob, Document, JavaScript Object или DOMString
+          }
+          return data;
+        }
+      </script>
+    </body>
+  </head>
+</html>

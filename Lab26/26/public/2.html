@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>26-2</title>
+</head>
+
+<body>
+    <h1>WASM</h1>
+    <p>sum(8,8) = <span id="rsum"></span></p>
+    <p>sub(8,8) = <span id="rsub"></span></p>
+    <p>mul(8,8) = <span id="rmul"></span></p>
+    <script type="text/javascript">
+    (async () => {
+        const res = fetch('http://localhost:3000/p.wasm', {mode: 'no-cors'});
+        const { instance } = await WebAssembly.instantiateStreaming(res);
+        rsum.innerHTML = instance.exports.sum(8, 8);
+        rsub.innerHTML = instance.exports.sub(8, 8);
+        rmul.innerHTML = instance.exports.mul(8, 8);
+    })()
+    </script>
+</body>
+
+</html>

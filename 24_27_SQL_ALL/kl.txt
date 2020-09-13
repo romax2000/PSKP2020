@@ -1,0 +1,1 @@
+pool: { max: 10, min: 0, softIdleTimeoutMillis: 5000, idleTimeoutMillis: 10000 }

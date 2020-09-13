@@ -1,0 +1,14 @@
+D:\exec\exec\bin\Debug\exec.exe.config
+D:\exec\exec\bin\Debug\exec.exe
+D:\exec\exec\bin\Debug\exec.pdb
+D:\exec\exec\obj\Debug\exec.csprojAssemblyReference.cache
+D:\exec\exec\obj\Debug\exec.csproj.CoreCompileInputs.cache
+D:\exec\exec\obj\Debug\exec.exe
+D:\exec\exec\obj\Debug\exec.pdb
+d:\Dokuments\NODEJS\LABS\labs2sem\Экзамен2020\44_Express_EXEC\44_exec_io\exec\exec\bin\Debug\exec.exe.config
+d:\Dokuments\NODEJS\LABS\labs2sem\Экзамен2020\44_Express_EXEC\44_exec_io\exec\exec\bin\Debug\exec.exe
+d:\Dokuments\NODEJS\LABS\labs2sem\Экзамен2020\44_Express_EXEC\44_exec_io\exec\exec\bin\Debug\exec.pdb
+d:\Dokuments\NODEJS\LABS\labs2sem\Экзамен2020\44_Express_EXEC\44_exec_io\exec\exec\obj\Debug\exec.csprojAssemblyReference.cache
+d:\Dokuments\NODEJS\LABS\labs2sem\Экзамен2020\44_Express_EXEC\44_exec_io\exec\exec\obj\Debug\exec.csproj.CoreCompileInputs.cache
+d:\Dokuments\NODEJS\LABS\labs2sem\Экзамен2020\44_Express_EXEC\44_exec_io\exec\exec\obj\Debug\exec.exe
+d:\Dokuments\NODEJS\LABS\labs2sem\Экзамен2020\44_Express_EXEC\44_exec_io\exec\exec\obj\Debug\exec.pdb

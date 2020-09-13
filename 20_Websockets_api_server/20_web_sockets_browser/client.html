@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>WS</title>
+  </head>
+  <body>
+    <script>
+      function startWS() {
+        let socket = new WebSocket("ws:/localhost:4000/");
+
+        socket.onopen = () => {
+          console.log("socket.onopen");
+          socket.send("hello from client");
+        };
+
+        socket.onclose = (e) => {
+          console.log("socket.onclose ", e);
+        };
+
+        socket.onmessage = (e) => {
+          console.log("Sent message => ", e.data);
+        };
+
+        socket.onerror = function (error) {
+          alert("Error " + error.message);
+        };
+      }
+    </script>
+    <button onclick="startWS()">startWS</button>
+  </body>
+</html>
